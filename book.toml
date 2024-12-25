@@ -3,7 +3,7 @@ authors = ["Martin Geisler"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Comprehensive Rust 🦀"
+title = "Modern Systems Programming 🦀"
 
 [rust]
 edition = "2021"

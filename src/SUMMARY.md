@@ -1,11 +1,14 @@
 <!-- Keep first page as index.md to avoid giving it two names. -->
 
-[Welcome to Comprehensive Rust 🦀](index.md)
+[Modern Systems Programming 🦀](index.md)
 
-- [Running the Course](running-the-course.md)
-  - [Course Structure](running-the-course/course-structure.md)
-  - [Keyboard Shortcuts](running-the-course/keyboard-shortcuts.md)
-  - [Translations](running-the-course/translations.md)
+[//]: # (- [Running the Course]&#40;running-the-course.md&#41;)
+
+[//]: # (  - [Course Structure]&#40;running-the-course/course-structure.md&#41;)
+
+[//]: # (  - [Keyboard Shortcuts]&#40;running-the-course/keyboard-shortcuts.md&#41;)
+
+[//]: # (  - [Translations]&#40;running-the-course/translations.md&#41;)
 - [Using Cargo](cargo.md)
   - [Rust Ecosystem](cargo/rust-ecosystem.md)
   - [Code Samples](cargo/code-samples.md)
@@ -216,95 +219,178 @@
   - [Exercise: FFI Wrapper](unsafe-rust/exercise.md)
     - [Solution](unsafe-rust/solution.md)
 
-# Android
+[//]: # (# Android)
 
----
+[//]: # ()
+[//]: # (---)
 
-- [Welcome](android.md)
-- [Setup](android/setup.md)
-- [Build Rules](android/build-rules.md)
-  - [Binary](android/build-rules/binary.md)
-  - [Library](android/build-rules/library.md)
-- [AIDL](android/aidl.md)
-  - [Birthday Service Tutorial](android/aidl/birthday-service.md)
-    - [Interface](android/aidl/example-service/interface.md)
-    - [Service API](android/aidl/example-service/service-bindings.md)
-    - [Service](android/aidl/example-service/service.md)
-    - [Server](android/aidl/example-service/server.md)
-    - [Deploy](android/aidl/example-service/deploy.md)
-    - [Client](android/aidl/example-service/client.md)
-    - [Changing API](android/aidl/example-service/changing-definition.md)
-    - [Updating Implementations](android/aidl/example-service/changing-implementation.md)
-  - [AIDL Types](android/aidl/types.md)
-    - [Primitive Types](android/aidl/types/primitives.md)
-    - [Array Types](android/aidl/types/arrays.md)
-    - [Sending Objects](android/aidl/types/objects.md)
-    - [Parcelables](android/aidl/types/parcelables.md)
-    - [Sending Files](android/aidl/types/file-descriptor.md)
-- [Testing](android/testing.md)
-  - [GoogleTest](android/testing/googletest.md)
-  - [Mocking](android/testing/mocking.md)
-- [Logging](android/logging.md)
-- [Interoperability](android/interoperability.md)
-  - [With C](android/interoperability/with-c.md)
-    - [Calling C with Bindgen](android/interoperability/with-c/bindgen.md)
-    - [Calling Rust from C](android/interoperability/with-c/rust.md)
-  - [With C++](android/interoperability/cpp.md)
-    - [The Bridge Module](android/interoperability/cpp/bridge.md)
-    - [Rust Bridge](android/interoperability/cpp/rust-bridge.md)
-    - [Generated C++](android/interoperability/cpp/generated-cpp.md)
-    - [C++ Bridge](android/interoperability/cpp/cpp-bridge.md)
-    - [Shared Types](android/interoperability/cpp/shared-types.md)
-    - [Shared Enums](android/interoperability/cpp/shared-enums.md)
-    - [Rust Error Handling](android/interoperability/cpp/rust-result.md)
-    - [C++ Error Handling](android/interoperability/cpp/cpp-exception.md)
-    - [Additional Types](android/interoperability/cpp/type-mapping.md)
-    - [Building for Android: C++](android/interoperability/cpp/android-build-cpp.md)
-    - [Building for Android: Genrules](android/interoperability/cpp/android-cpp-genrules.md)
-    - [Building for Android: Rust](android/interoperability/cpp/android-build-rust.md)
-  - [With Java](android/interoperability/java.md)
+[//]: # ()
+[//]: # (- [Welcome]&#40;android.md&#41;)
 
-# Chromium
+[//]: # (- [Setup]&#40;android/setup.md&#41;)
 
----
+[//]: # (- [Build Rules]&#40;android/build-rules.md&#41;)
 
-- [Welcome](chromium.md)
-- [Setup](chromium/setup.md)
-- [Comparing Chromium and Cargo Ecosystems](chromium/cargo.md)
-- [Policy](chromium/policy.md)
-- [Build Rules](chromium/build-rules.md)
-  - [Unsafe Code](chromium/build-rules/unsafe.md)
-  - [Depending on Rust Code from Chromium C++](chromium/build-rules/depending.md)
-  - [Visual Studio Code](chromium/build-rules/vscode.md)
-  - [Exercise](exercises/chromium/build-rules.md)
-- [Testing](chromium/testing.md)
-  - [`rust_gtest_interop` Library](chromium/testing/rust-gtest-interop.md)
-  - [GN Rules for Rust Tests](chromium/testing/build-gn.md)
-  - [`chromium::import!` Macro](chromium/testing/chromium-import-macro.md)
-  - [Exercise](exercises/chromium/testing.md)
-- [Interoperability with C++](chromium/interoperability-with-cpp.md)
-  - [Example Bindings](chromium/interoperability-with-cpp/example-bindings.md)
-  - [Limitations of CXX](chromium/interoperability-with-cpp/limitations-of-cxx.md)
-  - [CXX Error Handling](chromium/interoperability-with-cpp/error-handling.md)
-    - [Error Handling: QR Example](chromium/interoperability-with-cpp/error-handling-qr.md)
-    - [Error Handling: PNG Example](chromium/interoperability-with-cpp/error-handling-png.md)
-  - [Using CXX in Chromium](chromium/interoperability-with-cpp/using-cxx-in-chromium.md)
-  - [Exercise](exercises/chromium/interoperability-with-cpp.md)
-- [Adding Third Party Crates](chromium/adding-third-party-crates.md)
-  - [Configuring Cargo.toml](chromium/adding-third-party-crates/configuring-cargo-toml.md)
-  - [Configuring `gnrt_config.toml`](chromium/adding-third-party-crates/configuring-gnrt-config-toml.md)
-  - [Downloading Crates](chromium/adding-third-party-crates/downloading-crates.md)
-  - [Generating `gn` Build Rules](chromium/adding-third-party-crates/generating-gn-build-rules.md)
-  - [Resolving Problems](chromium/adding-third-party-crates/resolving-problems.md)
-    - [Build Scripts Which Generate Code](chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md)
-    - [Build Scripts Which Build C++ or Take Arbitrary Actions](chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md)
-  - [Depending on a Crate](chromium/adding-third-party-crates/depending-on-a-crate.md)
-  - [Reviews and Audits](chromium/adding-third-party-crates/reviews-and-audits.md)
-  - [Checking into Chromium Source Code](chromium/adding-third-party-crates/checking-in.md)
-  - [Keeping Crates Up to Date](chromium/adding-third-party-crates/keeping-up-to-date.md)
-  - [Exercise](exercises/chromium/third-party.md)
-- [Bringing It Together - Exercise](exercises/chromium/bringing-it-together.md)
-- [Exercise Solutions](exercises/chromium/solutions.md)
+[//]: # (  - [Binary]&#40;android/build-rules/binary.md&#41;)
+
+[//]: # (  - [Library]&#40;android/build-rules/library.md&#41;)
+
+[//]: # (- [AIDL]&#40;android/aidl.md&#41;)
+
+[//]: # (  - [Birthday Service Tutorial]&#40;android/aidl/birthday-service.md&#41;)
+
+[//]: # (    - [Interface]&#40;android/aidl/example-service/interface.md&#41;)
+
+[//]: # (    - [Service API]&#40;android/aidl/example-service/service-bindings.md&#41;)
+
+[//]: # (    - [Service]&#40;android/aidl/example-service/service.md&#41;)
+
+[//]: # (    - [Server]&#40;android/aidl/example-service/server.md&#41;)
+
+[//]: # (    - [Deploy]&#40;android/aidl/example-service/deploy.md&#41;)
+
+[//]: # (    - [Client]&#40;android/aidl/example-service/client.md&#41;)
+
+[//]: # (    - [Changing API]&#40;android/aidl/example-service/changing-definition.md&#41;)
+
+[//]: # (    - [Updating Implementations]&#40;android/aidl/example-service/changing-implementation.md&#41;)
+
+[//]: # (  - [AIDL Types]&#40;android/aidl/types.md&#41;)
+
+[//]: # (    - [Primitive Types]&#40;android/aidl/types/primitives.md&#41;)
+
+[//]: # (    - [Array Types]&#40;android/aidl/types/arrays.md&#41;)
+
+[//]: # (    - [Sending Objects]&#40;android/aidl/types/objects.md&#41;)
+
+[//]: # (    - [Parcelables]&#40;android/aidl/types/parcelables.md&#41;)
+
+[//]: # (    - [Sending Files]&#40;android/aidl/types/file-descriptor.md&#41;)
+
+[//]: # (- [Testing]&#40;android/testing.md&#41;)
+
+[//]: # (  - [GoogleTest]&#40;android/testing/googletest.md&#41;)
+
+[//]: # (  - [Mocking]&#40;android/testing/mocking.md&#41;)
+
+[//]: # (- [Logging]&#40;android/logging.md&#41;)
+
+[//]: # (- [Interoperability]&#40;android/interoperability.md&#41;)
+
+[//]: # (  - [With C]&#40;android/interoperability/with-c.md&#41;)
+
+[//]: # (    - [Calling C with Bindgen]&#40;android/interoperability/with-c/bindgen.md&#41;)
+
+[//]: # (    - [Calling Rust from C]&#40;android/interoperability/with-c/rust.md&#41;)
+
+[//]: # (  - [With C++]&#40;android/interoperability/cpp.md&#41;)
+
+[//]: # (    - [The Bridge Module]&#40;android/interoperability/cpp/bridge.md&#41;)
+
+[//]: # (    - [Rust Bridge]&#40;android/interoperability/cpp/rust-bridge.md&#41;)
+
+[//]: # (    - [Generated C++]&#40;android/interoperability/cpp/generated-cpp.md&#41;)
+
+[//]: # (    - [C++ Bridge]&#40;android/interoperability/cpp/cpp-bridge.md&#41;)
+
+[//]: # (    - [Shared Types]&#40;android/interoperability/cpp/shared-types.md&#41;)
+
+[//]: # (    - [Shared Enums]&#40;android/interoperability/cpp/shared-enums.md&#41;)
+
+[//]: # (    - [Rust Error Handling]&#40;android/interoperability/cpp/rust-result.md&#41;)
+
+[//]: # (    - [C++ Error Handling]&#40;android/interoperability/cpp/cpp-exception.md&#41;)
+
+[//]: # (    - [Additional Types]&#40;android/interoperability/cpp/type-mapping.md&#41;)
+
+[//]: # (    - [Building for Android: C++]&#40;android/interoperability/cpp/android-build-cpp.md&#41;)
+
+[//]: # (    - [Building for Android: Genrules]&#40;android/interoperability/cpp/android-cpp-genrules.md&#41;)
+
+[//]: # (    - [Building for Android: Rust]&#40;android/interoperability/cpp/android-build-rust.md&#41;)
+
+[//]: # (  - [With Java]&#40;android/interoperability/java.md&#41;)
+
+[//]: # ()
+[//]: # (# Chromium)
+
+[//]: # ()
+[//]: # (---)
+
+[//]: # ()
+[//]: # (- [Welcome]&#40;chromium.md&#41;)
+
+[//]: # (- [Setup]&#40;chromium/setup.md&#41;)
+
+[//]: # (- [Comparing Chromium and Cargo Ecosystems]&#40;chromium/cargo.md&#41;)
+
+[//]: # (- [Policy]&#40;chromium/policy.md&#41;)
+
+[//]: # (- [Build Rules]&#40;chromium/build-rules.md&#41;)
+
+[//]: # (  - [Unsafe Code]&#40;chromium/build-rules/unsafe.md&#41;)
+
+[//]: # (  - [Depending on Rust Code from Chromium C++]&#40;chromium/build-rules/depending.md&#41;)
+
+[//]: # (  - [Visual Studio Code]&#40;chromium/build-rules/vscode.md&#41;)
+
+[//]: # (  - [Exercise]&#40;exercises/chromium/build-rules.md&#41;)
+
+[//]: # (- [Testing]&#40;chromium/testing.md&#41;)
+
+[//]: # (  - [`rust_gtest_interop` Library]&#40;chromium/testing/rust-gtest-interop.md&#41;)
+
+[//]: # (  - [GN Rules for Rust Tests]&#40;chromium/testing/build-gn.md&#41;)
+
+[//]: # (  - [`chromium::import!` Macro]&#40;chromium/testing/chromium-import-macro.md&#41;)
+
+[//]: # (  - [Exercise]&#40;exercises/chromium/testing.md&#41;)
+
+[//]: # (- [Interoperability with C++]&#40;chromium/interoperability-with-cpp.md&#41;)
+
+[//]: # (  - [Example Bindings]&#40;chromium/interoperability-with-cpp/example-bindings.md&#41;)
+
+[//]: # (  - [Limitations of CXX]&#40;chromium/interoperability-with-cpp/limitations-of-cxx.md&#41;)
+
+[//]: # (  - [CXX Error Handling]&#40;chromium/interoperability-with-cpp/error-handling.md&#41;)
+
+[//]: # (    - [Error Handling: QR Example]&#40;chromium/interoperability-with-cpp/error-handling-qr.md&#41;)
+
+[//]: # (    - [Error Handling: PNG Example]&#40;chromium/interoperability-with-cpp/error-handling-png.md&#41;)
+
+[//]: # (  - [Using CXX in Chromium]&#40;chromium/interoperability-with-cpp/using-cxx-in-chromium.md&#41;)
+
+[//]: # (  - [Exercise]&#40;exercises/chromium/interoperability-with-cpp.md&#41;)
+
+[//]: # (- [Adding Third Party Crates]&#40;chromium/adding-third-party-crates.md&#41;)
+
+[//]: # (  - [Configuring Cargo.toml]&#40;chromium/adding-third-party-crates/configuring-cargo-toml.md&#41;)
+
+[//]: # (  - [Configuring `gnrt_config.toml`]&#40;chromium/adding-third-party-crates/configuring-gnrt-config-toml.md&#41;)
+
+[//]: # (  - [Downloading Crates]&#40;chromium/adding-third-party-crates/downloading-crates.md&#41;)
+
+[//]: # (  - [Generating `gn` Build Rules]&#40;chromium/adding-third-party-crates/generating-gn-build-rules.md&#41;)
+
+[//]: # (  - [Resolving Problems]&#40;chromium/adding-third-party-crates/resolving-problems.md&#41;)
+
+[//]: # (    - [Build Scripts Which Generate Code]&#40;chromium/adding-third-party-crates/resolving-problems/build-scripts-which-generate-code.md&#41;)
+
+[//]: # (    - [Build Scripts Which Build C++ or Take Arbitrary Actions]&#40;chromium/adding-third-party-crates/resolving-problems/build-scripts-which-take-arbitrary-actions.md&#41;)
+
+[//]: # (  - [Depending on a Crate]&#40;chromium/adding-third-party-crates/depending-on-a-crate.md&#41;)
+
+[//]: # (  - [Reviews and Audits]&#40;chromium/adding-third-party-crates/reviews-and-audits.md&#41;)
+
+[//]: # (  - [Checking into Chromium Source Code]&#40;chromium/adding-third-party-crates/checking-in.md&#41;)
+
+[//]: # (  - [Keeping Crates Up to Date]&#40;chromium/adding-third-party-crates/keeping-up-to-date.md&#41;)
+
+[//]: # (  - [Exercise]&#40;exercises/chromium/third-party.md&#41;)
+
+[//]: # (- [Bringing It Together - Exercise]&#40;exercises/chromium/bringing-it-together.md&#41;)
+
+[//]: # (- [Exercise Solutions]&#40;exercises/chromium/solutions.md&#41;)
 
 # Bare Metal: Morning
 

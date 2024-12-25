@@ -8,9 +8,9 @@ version numbers:
 
 ```shell
 % rustc --version
-rustc 1.69.0 (84c898d65 2023-04-16)
+rustc 1.83.0 (90b35a623 2024-11-26)
 % cargo --version
-cargo 1.69.0 (6e9a83356 2023-04-12)
+cargo 1.83.0 (5ffbef321 2024-10-29)
 ```
 
 You can use any later version too since Rust maintains backwards compatibility.

@@ -147,10 +147,14 @@ h1#glossary ~ ul > li:first-line {
   concurrency.
 - Rust Fundamentals:\
   Days 1 to 4 of this course.
-- Rust in Android:\
-  See [Rust in Android](android.md).
-- Rust in Chromium:\
-  See [Rust in Chromium](chromium.md).
+
+[//]: # (- Rust in Android:\)
+
+[//]: # (  See [Rust in Android]&#40;android.md&#41;.)
+
+[//]: # (- Rust in Chromium:\)
+
+[//]: # (  See [Rust in Chromium]&#40;chromium.md&#41;.)
 - safe:\
   Refers to code that adheres to Rust's ownership and borrowing rules,
   preventing memory-related errors.

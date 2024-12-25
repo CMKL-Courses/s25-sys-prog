@@ -23,8 +23,11 @@ Some exercises have been copied and adapted from
 `third_party/rust-on-exercism/` directory for details, including the license
 terms.
 
-## CXX
+[//]: # (## CXX)
 
-The [Interoperability with C++](android/interoperability/cpp.md) section uses an
-image from [CXX](https://cxx.rs/). Please see the `third_party/cxx/` directory
-for details, including the license terms.
+[//]: # ()
+[//]: # (The [Interoperability with C++]&#40;android/interoperability/cpp.md&#41; section uses an)
+
+[//]: # (image from [CXX]&#40;https://cxx.rs/&#41;. Please see the `third_party/cxx/` directory)
+
+[//]: # (for details, including the license terms.)
