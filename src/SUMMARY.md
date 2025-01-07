@@ -16,6 +16,12 @@
 
 ---
 
+# Week 1: Introduction
+- [Welcome](welcome-week-1.md)
+- [System reality](system-reality.md)
+  - [Memory matters](system-reality/memory-reference.md)
+  - [System performance](system-reality/system-performance.md)
+
 # Day 1: Morning
 
 - [Welcome](welcome-day-1.md)
